@@ -1,0 +1,77 @@
+[[plugins]]
+repo = 'scrooloose/nerdtree'
+
+# =========
+# lang
+# =========
+
+[[plugins]]
+repo = 'takkii/totolot'
+
+[[plugins]]
+repo = 'takkii/ruby-dictionary3'
+
+[[plugins]]
+repo = 'cespare/vim-toml'
+on_ft = 'toml'
+
+[[plugins]]
+repo = 'fatih/vim-go'
+on_ft = 'go'
+
+[[plugins]]
+repo = 'hynek/vim-python-pep8-indent'
+on_ft = 'python'
+
+[[plugins]]
+repo = 'elzr/vim-json'
+on_ft = 'json'
+
+[[plugins]]
+repo = 'rhysd/vim-gfm-syntax'
+on_ft = ['markdown', 'mkd']
+
+[[plugins]]
+repo = 'eagletmt/neco-ghc'
+on_ft = 'haskell'
+
+[[plugins]]
+repo = 'itchyny/vim-haskell-indent'
+on_ft = 'haskell'
+
+[[plugins]]
+repo = 'osyo-manga/vim-monster'
+on_ft = 'ruby'
+
+[[plugins]]
+repo = 'tpope/vim-endwise'
+on_ft = ['ruby']
+
+[[plugins]]
+repo = 'slim-template/vim-slim'
+on_ft = 'slim'
+
+[[plugins]]
+repo = 'fatih/vim-go'
+on_ft = 'go'
+hook_source = '''
+let g:go_fmt_command = "goimports"
+'''
+
+[[plugins]]
+repo = 'leafgarland/typescript-vim'
+on_ft = 'typescript'
+
+[[plugins]]
+repo = 'yoyobuae/vala.vim'
+on_ft = 'vala'
+
+# deoplete
+[[plugins]]
+repo = 'zchee/deoplete-go'
+on_ft = 'go'
+
+[[plugins]]
+repo = 'Shougo/neoinclude.vim'
+on_ft = ['c', 'cpp']
+depends = ['deoplete.nvim']

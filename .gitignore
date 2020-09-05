@@ -1,0 +1,10 @@
+# all ignore
+*
+
+# add all directries to white list
+!*/
+
+# white list
+!.gitignore
+!nvim/**
+!fish/**
