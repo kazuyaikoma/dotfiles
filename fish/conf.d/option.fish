@@ -81,4 +81,4 @@ alias atest='g++ -std=gnu++17 -Wall -Wextra -O2 -DONLINE_JUDGE -I/opt/boost/gcc/
 
 # SELF project
 alias api-in='docker exec -it self-api_app_1 sh'
-alias ml-in='docker exec -it selfml_app_1 sh'
+alias ml-in='docker exec -it self-ml_app_1 sh'
