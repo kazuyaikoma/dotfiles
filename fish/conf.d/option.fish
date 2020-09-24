@@ -40,9 +40,7 @@ alias goo='googler'
 alias goto='googler -j'
 alias fd='open (pwd)'
 alias c='clear'
-alias d='ncdu'
 alias b='byobu'
-alias dstat='sudo docker stats'
 alias csv='vd'
 alias pbcopy='xsel --clipboard --input'
 alias restart='shutdown -r'
@@ -71,7 +69,10 @@ alias po='poetry'
 alias valarun='valac --pkg gtk+-3.0 Application.vala; and ./Application'
 
 # docker
+alias d='docker'
 alias dc='docker-compose'
+alias dstat='sudo docker stats'
+
 # rails
 alias be='bundle exec'
 
