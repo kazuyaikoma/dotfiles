@@ -14,12 +14,10 @@ alias stash='git stash'
 # haskell
 # alias ghci='stack exec ghci'
 
-# Rust repl
-alias rust='evcxr'
-
 # repls
 alias irb='pry'
 alias ipy='ipython'
+alias rust='evcxr'
 
 # apt
 alias gapt='sudo apt install -y'
@@ -79,6 +77,9 @@ alias be='bundle exec'
 # atcoder
 alias atc='atcoder-tools gen --workspace ($HOME/ghq/github.com/nixiesquid/atcoder/AtCoder) $argv[1]'
 alias atest='g++ -std=gnu++17 -Wall -Wextra -O2 -DONLINE_JUDGE -I/opt/boost/gcc/include -L/opt/boost/gcc/lib -o a.out ./main.cpp; and atcoder-tools test'
+
+# android
+alias android='android-studio'
 
 # SELF project
 alias api-in='docker exec -it self-api_app_1 sh'
