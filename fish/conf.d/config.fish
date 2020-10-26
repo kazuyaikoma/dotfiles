@@ -41,7 +41,9 @@ set -gx PATH $NODENV_ROOT/shims $PATH
 set -x PATH $HOME/.anyenv/envs/nodenv/versions/*/bin $PATH
 
 # go
-set -x PATH /usr/local/go/bin $PATH
+set -x GOPATH $HOME/go
+set -x GOBIN $GOPATH/bin
+set -x PATH $PATH $GOBIN
 
 # ghq
 set -x PATH ~/go/bin $PATH
