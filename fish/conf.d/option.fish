@@ -30,6 +30,7 @@ alias tree='exa -l --tree'
 alias atree='exa -la --tree'
 alias t='touch'
 alias his='eval (history | peco)'
+alias openf='xdg-open'
 
 alias ...='cd ../..'
 alias cdw='cd ~/ghq/github.com/nixiesquid/workspace'
