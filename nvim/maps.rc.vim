@@ -20,11 +20,17 @@ nnoremap :s<CR>  :split <CR>
 " open terminal on splitted left pane
 nnoremap <S-t> :vsplit <CR> <C-w>l :terminal <CR>
 
-" move splitted windows
+" move splitted windows for Linux
 nnoremap <A-h>   <C-w>h
 nnoremap <A-j>   <C-w>j
 nnoremap <A-k>   <C-w>k
 nnoremap <A-l>   <C-w>l
+
+" move splitted windows for Mac
+nnoremap ˙   <C-w>h
+nnoremap ∆   <C-w>j
+nnoremap ˚   <C-w>k
+nnoremap ¬   <C-w>l
 
 " buffer move
 nnoremap <C-h> :bprev <CR>
@@ -36,7 +42,10 @@ nnoremap <C-j> :cnext <CR>
 
 " close
 nnoremap <C-c> :cclose <CR>
+" :q for Linux
 map <A-c> :q <CR>
+" :q for Mac
+map ç :q <CR>
 
 " cansel highlight
 nnoremap <ESC><ESC> :noh <CR>
@@ -44,8 +53,11 @@ nnoremap <ESC><ESC> :noh <CR>
 " vim search
 nnoremap <C-S-f> :Rg
 
-" fugitive settings
+" fugitive settings for Linux
 nnoremap <A-b> :Gblame <CR>
+
+" fugitive settings for Mac
+nnoremap ∫ :Gblame <CR>
 
 " NERDTree
 nnoremap <S-p> :NERDTreeFind<CR>
