@@ -20,6 +20,8 @@ if test (string match -r 'Linux.*' (uname))
   # deactivate plymouth
   sudo plymouth deactivate
 else if test (string match -r 'Darwin.*' (uname))
+# JDK setting
+  set -x JAVA_HOME usr/libexec/java_home
 end
 
 # path
