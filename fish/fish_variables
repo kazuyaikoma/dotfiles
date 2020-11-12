@@ -7,6 +7,10 @@ SETUVAR _fish_abbr_zq:zoxide\x20query
 SETUVAR _fish_abbr_zqi:zoxide\x20query\x20\x2di
 SETUVAR _fish_abbr_zr:zoxide\x20remove
 SETUVAR _fish_abbr_zri:zoxide\x20remove\x20\x2di
+SETUVAR _fisher_jorgebucaran_2F_fisher_files:/Users/nixiesquid/\x2econfig/fish/functions/fisher\x2efish\x1e/Users/nixiesquid/\x2econfig/fish/completions/fisher\x2efish
+SETUVAR _fisher_oh_2D_my_2D_fish_2F_theme_2D_bobthefish_files:/Users/nixiesquid/\x2econfig/fish/functions/__bobthefish_colors\x2efish\x1e/Users/nixiesquid/\x2econfig/fish/functions/__bobthefish_display_colors\x2efish\x1e/Users/nixiesquid/\x2econfig/fish/functions/__bobthefish_glyphs\x2efish\x1e/Users/nixiesquid/\x2econfig/fish/functions/bobthefish_display_colors\x2efish\x1e/Users/nixiesquid/\x2econfig/fish/functions/fish_greeting\x2efish\x1e/Users/nixiesquid/\x2econfig/fish/functions/fish_mode_prompt\x2efish\x1e/Users/nixiesquid/\x2econfig/fish/functions/fish_prompt\x2efish\x1e/Users/nixiesquid/\x2econfig/fish/functions/fish_right_prompt\x2efish\x1e/Users/nixiesquid/\x2econfig/fish/functions/fish_title\x2efish
+SETUVAR _fisher_plugins:jorgebucaran/fisher\x1eoh\x2dmy\x2dfish/theme\x2dbobthefish\x1eryoppippi/fish\x2dpoetry
+SETUVAR _fisher_ryoppippi_2F_fish_2D_poetry_files:/Users/nixiesquid/\x2econfig/fish/conf\x2ed/fish\x2dpoetry\x2efish
 SETUVAR fish_color_autosuggestion:555\x1ebrblack
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:005fd7
