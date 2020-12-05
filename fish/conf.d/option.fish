@@ -67,6 +67,9 @@ alias cpprun='g++ -o a.out $argv[1]; and ./a.out $argv[2..-1]'
 # poetry
 alias po='poetry'
 
+# Flutter
+alias fl='flutter'
+
 # vala
 alias valarun='valac --pkg gtk+-3.0 Application.vala; and ./Application'
 
