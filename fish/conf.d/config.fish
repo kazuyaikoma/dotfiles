@@ -20,14 +20,16 @@ if test (string match -r 'Linux.*' (uname))
   # deactivate plymouth
   sudo plymouth deactivate
 else if test (string match -r 'Darwin.*' (uname))
-# JDK setting
-  set -x JAVA_HOME usr/libexec/java_home
+  # JDK setting
+  # set -x JAVA_HOME /usr/libexec/java_home
+  # Flutter
+  set -x PATH $HOME/flutter/bin $PATH
 end
 
 # path
 # set -x PATH (stack path --local-bin) $PATH
-set -x PATH ~/.cargo/bin $PATH
-set -x PATH ~/.poetry/bin $PATH
+set -x PATH $HOME/.cargo/bin $PATH
+set -x PATH $HOME/.poetry/bin $PATH
 
 # anyenv
 set -x PATH $HOME/.anyenv/bin $PATH
@@ -48,7 +50,7 @@ set -x GOBIN $GOPATH/bin
 set -x PATH $PATH $GOBIN
 
 # ghq
-set -x PATH ~/go/bin $PATH
+set -x PATH $HOME/go/bin $PATH
 set -x PATH /snap/bin $PATH
 
 # direnv
