@@ -13,12 +13,15 @@ if test (string match -r 'Linux.*' (uname))
   zoxide init fish | source
 
   # kworker's redundant works disable
-  echo 'disable' | sudo tee /sys/firmware/acpi/interrupts/gpe06
-  echo 'disable' | sudo tee /sys/firmware/acpi/interrupts/gpe17
+  echo 'disable' | sudo tee /sys/firmware/acpi/interrupts/gpe06 $DISPLAY> /dev/null 2>&1
+  echo 'disable' | sudo tee /sys/firmware/acpi/interrupts/gpe17 $DISPLAY> /dev/null 2>&1
   # power tuning
   sudo tlp start
   # deactivate plymouth
   sudo plymouth deactivate
+  # tilda keymap
+  xkbcomp -I/usr/share/X11/xkb ~/.xkb/keymap $DISPLAY> /dev/null 2>&1
+
 else if test (string match -r 'Darwin.*' (uname))
   # JDK setting
   # set -x JAVA_HOME /usr/libexec/java_home
