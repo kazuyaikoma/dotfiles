@@ -34,6 +34,10 @@ end
 set -x PATH $HOME/.cargo/bin $PATH
 set -x PATH $HOME/.poetry/bin $PATH
 
+# jethrokuan/fzf
+set -U FZF_LEGACY_KEYBINDINGS 0
+set -U FZF_REVERSE_ISEARCH_OPTS "--reverse --height=100%"
+
 # anyenv
 set -x PATH $HOME/.anyenv/bin $PATH
 status --is-interactive; and source (anyenv init - | psub)
