@@ -50,6 +50,7 @@ alias tl='tldr'
 
 # alias search
 alias agrep='alias | grep'
+alias hisg='history | grep'
 
 # neovim
 alias vi='nvim'
