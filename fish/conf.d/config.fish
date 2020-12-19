@@ -1,5 +1,16 @@
 # setting with each os
-if test (string match -r 'Linux.*' (uname))
+if test (string match -r 'microsoft' (uname -r))
+  set -x PATH /usr/local/bin $PATH
+  set -x PATH /home/linuxbrew/.linuxbrew/bin $PATH
+  # XDG
+  set -x XDG_CONFIG_HOME $HOME/.config
+  set -x XDG_CASCHE_HOME $HOME/.cache
+  # lang
+  set -x LANG en_US.UTF8
+
+  zoxide init fish | source
+
+else if test (string match -r 'Linux.*' (uname))
   set -x PATH /usr/local/bin $PATH
   set -x PATH /home/linuxbrew/.linuxbrew/bin $PATH
   # XDG
