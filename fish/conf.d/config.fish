@@ -46,6 +46,7 @@ if test (string match -r 'microsoft' (uname -r))
   set -x BROWSER wsl-open
 
   zoxide init fish | source
+  cd
 
 else if test (string match -r 'Linux.*' (uname))
   set -x PATH /usr/local/bin $PATH
