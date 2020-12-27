@@ -68,3 +68,10 @@ set autowrite
 " vimgrep系
 autocmd QuickFixCmdPost *grep* cwindow
 
+" clipboard for WSL2
+if system('uname -a | grep microsoft') != ''
+  augroup myYank
+    autocmd!
+    autocmd TextYankPost * :call system('clip.exe', @")
+  augroup END
+endif

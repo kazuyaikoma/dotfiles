@@ -1,34 +1,4 @@
-# setting with each os
-if test (string match -r 'Linux.*' (uname))
-  set -x PATH /usr/local/bin $PATH
-  set -x PATH /home/linuxbrew/.linuxbrew/bin $PATH
-  # XDG
-  set -x XDG_CONFIG_HOME $HOME/.config
-  set -x XDG_CASCHE_HOME $HOME/.cache
-  # lang
-  set -x LANG en_US.UTF8
-  # flutter
-  set -x PATH /usr/local/flutter/bin $PATH
-
-  zoxide init fish | source
-
-  # kworker's redundant works disable
-  echo 'disable' | sudo tee /sys/firmware/acpi/interrupts/gpe06
-  echo 'disable' | sudo tee /sys/firmware/acpi/interrupts/gpe17
-  # power tuning
-  sudo tlp start
-  # deactivate plymouth
-  sudo plymouth deactivate
-  # tilda keymap
-  xkbcomp -I/usr/share/X11/xkb ~/.xkb/keymap $DISPLAY> /dev/null 2>&1
-
-else if test (string match -r 'Darwin.*' (uname))
-  # JDK setting
-  # set -x JAVA_HOME /usr/libexec/java_home
-  # Flutter
-  set -x PATH $HOME/flutter/bin $PATH
-end
-
+# Common
 # path
 # set -x PATH (stack path --local-bin) $PATH
 set -x PATH $HOME/.cargo/bin $PATH
@@ -62,3 +32,48 @@ set -x PATH /snap/bin $PATH
 
 # direnv
 # eval (direnv hook fish)
+
+# setting with each os
+if test (string match -r 'microsoft' (uname -r))
+  set -x PATH /usr/local/bin $PATH
+  set -x PATH /home/linuxbrew/.linuxbrew/bin $PATH
+  # XDG
+  set -x XDG_CONFIG_HOME $HOME/.config
+  set -x XDG_CASCHE_HOME $HOME/.cache
+  # lang
+  set -x LANG en_US.UTF8
+  # BROWSER
+  set -x BROWSER wsl-open
+
+  zoxide init fish | source
+  cd
+
+else if test (string match -r 'Linux.*' (uname))
+  set -x PATH /usr/local/bin $PATH
+  set -x PATH /home/linuxbrew/.linuxbrew/bin $PATH
+  # XDG
+  set -x XDG_CONFIG_HOME $HOME/.config
+  set -x XDG_CASCHE_HOME $HOME/.cache
+  # lang
+  set -x LANG en_US.UTF8
+  # flutter
+  set -x PATH /usr/local/flutter/bin $PATH
+
+  zoxide init fish | source
+
+  # kworker's redundant works disable
+  echo 'disable' | sudo tee /sys/firmware/acpi/interrupts/gpe06
+  echo 'disable' | sudo tee /sys/firmware/acpi/interrupts/gpe17
+  # power tuning
+  sudo tlp start
+  # deactivate plymouth
+  sudo plymouth deactivate
+  # tilda keymap
+  xkbcomp -I/usr/share/X11/xkb ~/.xkb/keymap $DISPLAY> /dev/null 2>&1
+
+else if test (string match -r 'Darwin.*' (uname))
+  # JDK setting
+  # set -x JAVA_HOME /usr/libexec/java_home
+  # Flutter
+  set -x PATH $HOME/flutter/bin $PATH
+end
