@@ -13,6 +13,13 @@ repo = 'Shougo/neoyank.vim'
 [[plugins]]
 repo = 'ctrlpvim/ctrlp.vim'
 
+[[plugins]]
+repo = 'junegunn/fzf'
+build = './install --all'
+
+[[plugins]]
+repo = 'junegunn/fzf.vim'
+
 # comment
 [[plugins]]
 repo = 'tpope/vim-commentary'

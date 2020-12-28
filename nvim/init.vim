@@ -65,6 +65,9 @@ call s:source_rc('maps.rc.vim')
 set secure
 set autowrite
 
+" dein plugin's cache setting
+let g:dein#auto_recache = 1
+
 " vimgrep系
 autocmd QuickFixCmdPost *grep* cwindow
 
