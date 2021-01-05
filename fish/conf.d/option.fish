@@ -39,10 +39,8 @@ alias ...='cd ../..'
 alias cdw='cd ~/ghq/github.com/nixiesquid/workspace'
 alias cdc='cd ~/.config'
 alias goo='googler'
-alias goto='googler -j'
 alias fd='open (pwd)'
 alias c='clear'
-alias b='byobu'
 alias csv='vd'
 alias pbcopy='xsel --clipboard --input'
 alias restart='shutdown -r'
@@ -50,7 +48,6 @@ alias tl='tldr'
 
 # alias search
 alias agrep='alias | grep'
-alias hisg='history | grep'
 
 # neovim
 alias vi='nvim'
