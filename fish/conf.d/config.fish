@@ -21,7 +21,9 @@ set -gx PATH $NODENV_ROOT/shims $PATH
 # TODO: *指定ではなくて、現在のnodeバージョンに応じて切り替える
 set -x PATH $HOME/.anyenv/envs/nodenv/versions/*/bin $PATH
 
-# go
+# go path
+set -x PATH /usr/local/go/bin $PATH
+# go package path
 set -x GOPATH $HOME/go
 set -x GOBIN $GOPATH/bin
 set -x PATH $PATH $GOBIN
