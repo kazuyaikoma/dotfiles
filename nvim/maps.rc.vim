@@ -43,15 +43,18 @@ nnoremap <C-j> :cnext <CR>
 " close
 nnoremap <C-c> :cclose <CR>
 " :q for Linux
-map <A-c> :q <CR>
+nnoremap <A-c> :q <CR>
 " :q for Mac
-map ç :q <CR>
+nnoremap ç :q <CR>
 
 " cansel highlight
 nnoremap <ESC><ESC> :noh <CR>
 
-" vim search
+" vim search(TODO: 下のmapがwindows, linuxでも機能すればこちらは削除)
 nnoremap <C-S-f> :Rg
+
+" vim search for Mac
+nnoremap <C-F> :Rg
 
 " fugitive settings for Linux
 nnoremap <A-b> :Gblame <CR>
