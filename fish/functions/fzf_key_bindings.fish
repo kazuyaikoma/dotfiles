@@ -1,1 +1,1 @@
-/Users/nixiesquid/.cache/dein/repos/github.com/junegunn/fzf/shell/key-bindings.fish
+/home/nixiesquid/.cache/dein/repos/github.com/junegunn/fzf/shell/key-bindings.fish

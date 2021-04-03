@@ -63,9 +63,6 @@ else if test (string match -r 'Linux.*' (uname))
 
   zoxide init fish | source
 
-  # kworker's redundant works disable
-  echo 'disable' | sudo tee /sys/firmware/acpi/interrupts/gpe06
-  echo 'disable' | sudo tee /sys/firmware/acpi/interrupts/gpe17
   # power tuning
   sudo tlp start
   # deactivate plymouth
