@@ -61,11 +61,10 @@ else if test (string match -r 'Linux.*' (uname))
   # flutter
   set -x PATH /usr/local/flutter/bin $PATH
 
-  # disable specific kworker
-  # echo disable | sudo tee /sys/firmware/acpi/interrupts/gpe4E
-  # echo 'gpe4E kworker disabled.'
-
+  # zoxide
   zoxide init fish | source
+  # starship
+  starship init fish | source
 
 else if test (string match -r 'Darwin.*' (uname))
   # JDK setting
