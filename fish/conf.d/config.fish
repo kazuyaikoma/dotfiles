@@ -62,8 +62,8 @@ else if test (string match -r 'Linux.*' (uname))
   set -x PATH /usr/local/flutter/bin $PATH
 
   # disable specific kworker
-  echo disable | sudo tee /sys/firmware/acpi/interrupts/gpe4E
-  echo 'gpe4E kworker disabled.'
+  # echo disable | sudo tee /sys/firmware/acpi/interrupts/gpe4E
+  # echo 'gpe4E kworker disabled.'
 
   zoxide init fish | source
 
