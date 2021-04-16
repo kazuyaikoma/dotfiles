@@ -46,6 +46,9 @@ alias pbcopy='xsel --clipboard --input'
 alias restart='shutdown -r'
 alias tl='tldr'
 
+# unimatrix
+alias uni="unimatrix -c blue -u 'Linux'"
+
 # alias search
 alias agrep='alias | grep'
 
