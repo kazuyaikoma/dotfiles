@@ -33,7 +33,7 @@ alias his='eval (history | peco)'
 alias openf='xdg-open'
 alias wish='xdg-open https://github.com/nixiesquid/wishlist/issues'
 alias fast='fast -u'
-alias cpu="watch -n 0.5 'istats cpu'"
+alias cpu="watch -n 0.1 sensors"
 
 alias ...='cd ../..'
 alias cdw='cd ~/ghq/github.com/nixiesquid/workspace'
