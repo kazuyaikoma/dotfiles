@@ -1,5 +1,5 @@
 # system update
-alias clean='sudo apt autoremove; and brew cleanup'
+alias clean='sudo apt autoremove -y; and brew cleanup'
 
 # git
 alias g='cd (ghq root)/(ghq list | fzf)'
