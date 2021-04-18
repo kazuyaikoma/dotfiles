@@ -56,6 +56,9 @@ nnoremap <C-S-f> :Rg
 " vim search for Mac
 nnoremap <C-F> :Rg
 
+" multi line copy in VISUAL mode
+nnoremap <Space>v :call sml#mode_on()<CR>
+
 " fugitive settings for Linux
 nnoremap <A-b> :Gblame <CR>
 

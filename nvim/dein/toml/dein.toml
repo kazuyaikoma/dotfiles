@@ -40,6 +40,10 @@ repo = 'jremmen/vim-ripgrep'
 [[plugins]]
 repo = 'segeljakt/vim-silicon'
 
+# multi line copy
+[[plugins]]
+repo = 'Rasukarusan/nvim-select-multi-line'
+
 # DrawIt!
 [[plugin]]
 repo = 'vim-scripts/DrawIt'
