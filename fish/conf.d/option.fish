@@ -7,7 +7,7 @@ alias gb='git branch'
 alias gs='git status'
 alias gco='git checkout'
 alias pull='git pull'
-alias push='git push'
+alias push='git push origin (git rev-parse --abbrev-ref HEAD)'
 alias amend='git commit --amend'
 alias stash='git stash'
 
