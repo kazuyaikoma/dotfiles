@@ -96,6 +96,11 @@ repo = 'wadackel/vim-dogrun'
 [[plugins]]
 repo = 'junegunn/goyo.vim'
 
+# Rust
+[[plugins]]
+repo = 'rust-lang/rust.vim'
+on_ft = 'rust'
+
 # Flutter & Dart
 [[plugins]]
 repo = 'dart-lang/dart-vim-plugin'
