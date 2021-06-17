@@ -26,7 +26,7 @@ set -x PATH /usr/local/go/bin $PATH
 # go package path
 set -x GOPATH $HOME/go
 set -x GOBIN $GOPATH/bin
-set -x PATH $PATH $GOBIN
+set -x PATH $GOBIN $PATH
 
 # ghq
 set -x PATH $HOME/go/bin $PATH
