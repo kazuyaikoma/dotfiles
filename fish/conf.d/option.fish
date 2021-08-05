@@ -31,12 +31,12 @@ alias atree='exa -la --tree'
 alias t='touch'
 alias his='eval (history | peco)'
 alias openf='xdg-open'
-alias wish='xdg-open https://github.com/nixiesquid/wishlist/issues'
+alias wish='xdg-open https://github.com/nixii/wishlist/issues'
 alias fast='fast -u'
 alias cpu="watch -n 0.1 sensors"
 
 alias ...='cd ../..'
-alias cdw='cd ~/ghq/github.com/nixiesquid/workspace'
+alias cdw='cd ~/ghq/github.com/nixii/workspace'
 alias cdc='cd ~/.config'
 alias goo='googler'
 alias fd='open (pwd)'
@@ -83,7 +83,7 @@ alias dstat='sudo docker stats'
 alias be='bundle exec'
 
 # atcoder
-alias atc='atcoder-tools gen --workspace ($HOME/ghq/github.com/nixiesquid/atcoder/AtCoder) $argv[1]'
+alias atc='atcoder-tools gen --workspace ($HOME/ghq/github.com/nixii/atcoder/AtCoder) $argv[1]'
 alias atest='g++ -std=gnu++17 -Wall -Wextra -O2 -DONLINE_JUDGE -I/opt/boost/gcc/include -L/opt/boost/gcc/lib -o a.out ./main.cpp; and atcoder-tools test'
 
 # android
