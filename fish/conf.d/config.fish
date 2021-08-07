@@ -23,6 +23,7 @@ set -x PATH $HOME/.anyenv/envs/nodenv/versions/*/bin $PATH
 
 # go path
 set -x PATH /usr/local/go/bin $PATH
+
 # go package path
 set -x GOPATH $HOME/go
 set -x GOBIN $GOPATH/bin
@@ -72,3 +73,6 @@ else if test (string match -r 'Darwin.*' (uname))
   # Flutter
   set -x PATH $HOME/flutter/bin $PATH
 end
+
+# gh command setting
+eval (gh completion -s fish| source)
