@@ -34,6 +34,7 @@ alias openf='xdg-open'
 alias wish='xdg-open https://github.com/nixii/wishlist/issues'
 alias fast='fast -u'
 alias cpu="watch -n 0.1 sensors"
+alias dwn="countdown"
 
 alias ...='cd ../..'
 alias cdw='cd ~/ghq/github.com/nixii/workspace'
