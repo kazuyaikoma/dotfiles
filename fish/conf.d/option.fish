@@ -47,6 +47,10 @@ alias pbcopy='xsel --clipboard --input'
 alias restart='shutdown -r'
 alias tl='tldr'
 
+# translate
+alias ej="trans -brief :ja"
+alias je="trans -brief :en"
+
 # unimatrix
 alias uni="unimatrix -c blue -u 'Linux'"
 
