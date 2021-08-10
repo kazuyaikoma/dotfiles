@@ -50,11 +50,8 @@ nnoremap ç :q <CR>
 " cansel highlight
 nnoremap <ESC><ESC> :noh <CR>
 
-" vim search(TODO: 下のmapがwindows, linuxでも機能すればこちらは削除)
-nnoremap <C-S-f> :Rg
-
-" vim search for Mac
-nnoremap <C-F> :Rg
+" vim search
+nnoremap <C-f> :Rg
 
 " multi line copy in VISUAL mode
 nnoremap <Space>v :call sml#mode_on()<CR>
@@ -70,3 +67,7 @@ nnoremap <S-p> :NERDTreeFind<CR>
 
 " very magic
 nmap / /\v
+
+" vim-go(定義ジャンプ)
+let mapleader = "\<Space>"
+au FileType go nmap <leader>v <Plug>(go-def-vertical)
