@@ -29,6 +29,11 @@ set -x GOPATH $HOME/go
 set -x GOBIN $GOPATH/bin
 set -x PATH $GOBIN $PATH
 
+# Android SDK
+set -x ANDROID_HOME $HOME/Android/Sdk
+set -x PATH $ANDROID_HOME/tools $PATH
+set -x PATH $ANDROID_HOME/platform-tools $PATH
+
 # ghq
 set -x PATH $HOME/go/bin $PATH
 set -x PATH /snap/bin $PATH
