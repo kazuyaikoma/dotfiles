@@ -4,6 +4,9 @@
 set -x PATH $HOME/.cargo/bin $PATH
 set -x PATH $HOME/.poetry/bin $PATH
 
+# 共用ライブラリ設定
+set -x LD_LIBRARY_PATH /usr/local/lib
+
 # jethrokuan/fzf
 set -U FZF_LEGACY_KEYBINDINGS 0
 set -U FZF_REVERSE_ISEARCH_OPTS "--reverse --height=100%"

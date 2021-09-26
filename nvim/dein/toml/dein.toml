@@ -20,6 +20,9 @@ build = './install --all'
 [[plugins]]
 repo = 'junegunn/fzf.vim'
 
+[[plugins]]
+repo = 'tpope/vim-surround'
+
 # comment
 [[plugins]]
 repo = 'tpope/vim-commentary'
