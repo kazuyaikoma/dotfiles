@@ -152,6 +152,3 @@ hook_source = '''
 
 [[plugins]]
 repo = 'terryma/vim-multiple-cursors'
-
-[[plugins]]
-repo = 'takkii/ruby-dictionary3'
