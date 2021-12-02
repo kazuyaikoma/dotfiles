@@ -6,8 +6,8 @@ alias g='cd (ghq root)/(ghq list | fzf)'
 alias gb='git branch'
 alias gs='git status'
 alias gco='git checkout'
-alias pull='git pull'
 alias push='git push origin (git rev-parse --abbrev-ref HEAD)'
+alias pull='git pull origin (git rev-parse --abbrev-ref HEAD)'
 alias amend='git commit --amend'
 alias stash='git stash'
 
@@ -82,6 +82,7 @@ alias valarun='valac --pkg gtk+-3.0 Application.vala; and ./Application'
 # docker
 alias d='docker'
 alias dc='docker-compose'
+alias dcup='dc up -d; and dc up'
 alias dstat='sudo docker stats'
 
 # rails
