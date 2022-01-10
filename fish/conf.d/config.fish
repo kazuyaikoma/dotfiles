@@ -7,31 +7,6 @@ set -x PATH $HOME/.poetry/bin $PATH
 # 共用ライブラリ設定
 set -x LD_LIBRARY_PATH /usr/local/lib
 
-# jethrokuan/fzf
-set -U FZF_LEGACY_KEYBINDINGS 0
-set -U FZF_REVERSE_ISEARCH_OPTS "--reverse --height=100%"
-
-# anyenv
-set -x PATH $HOME/.anyenv/bin $PATH
-status --is-interactive; and source (anyenv init - | psub)
-
-# nodenv
-set -x NODENV_ROOT $HOME/.anyenv/envs/nodenv
-set -x PATH $HOME/.anyenv/envs/nodenv/bin $PATH
-set -gx PATH $NODENV_ROOT/shims $PATH
-
-# node packages
-# TODO: *指定ではなくて、現在のnodeバージョンに応じて切り替える
-set -x PATH $HOME/.anyenv/envs/nodenv/versions/*/bin $PATH
-
-# go path
-set -x PATH /usr/local/go/bin $PATH
-
-# go package path
-set -x GOPATH $HOME/go
-set -x GOBIN $GOPATH/bin
-set -x PATH $GOBIN $PATH
-
 # Android SDK
 set -x ANDROID_HOME $HOME/Android/Sdk
 set -x PATH $ANDROID_HOME/tools $PATH
@@ -76,11 +51,51 @@ else if test (string match -r 'Linux.*' (uname))
   starship init fish | source
 
 else if test (string match -r 'Darwin.*' (uname))
+  # brew
+  set -x PATH /opt/homebrew/bin $PATH
   # JDK setting
   # set -x JAVA_HOME /usr/libexec/java_home
   # Flutter
   set -x PATH $HOME/flutter/bin $PATH
 end
 
+# theme
+starship init fish | source
+
+# anyenv
+set -x PATH $HOME/.anyenv/bin $PATH
+status --is-interactive; and source (anyenv init - | psub)
+
+# nodenv
+set -x NODENV_ROOT $HOME/.anyenv/envs/nodenv
+set -x PATH $HOME/.anyenv/envs/nodenv/bin $PATH
+set -gx PATH $NODENV_ROOT/shims $PATH
+
+# node packages
+set -x PATH $HOME/.anyenv/envs/nodenv/versions/(nodenv versions --bare)/bin $PATH
+
+# pyenv
+set -x PYENV_ROOT "$HOME/.anyenv/envs/pyenv"
+set -gx PATH $PYENV_ROOT/shims $PATH
+eval (pyenv init - | source)
+
+# rbenv
+set -x RBENV_ROOT "$HOME/.anyenv/envs/rbenv"
+set -gx PATH $RBENV_ROOT/shims $PATH
+eval (rbenv init - | source)
+
+# goenv
+set -x GOENV_ROOT "$HOME/.anyenv/envs/goenv"
+set -x PATH "$GOENV_ROOT/bin" $PATH
+set -x GOROOT (goenv prefix)
+set -x GOPATH $HOME/go/(goenv versions --bare)
+set -gx PATH $RBENV_ROOT/shims $PATH
+eval (goenv init - | source)
+
 # gh command setting
 eval (gh completion -s fish| source)
+
+# jethrokuan/fzf
+set -U FZF_LEGACY_KEYBINDINGS 0
+set -U FZF_REVERSE_ISEARCH_OPTS "--reverse --height=100%"
+
