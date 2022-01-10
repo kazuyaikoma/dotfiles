@@ -61,6 +61,7 @@ end
 
 # theme
 starship init fish | source
+set -x STARSHIP_CONFIG ~/.starship/config.toml
 
 # anyenv
 set -x PATH $HOME/.anyenv/bin $PATH
