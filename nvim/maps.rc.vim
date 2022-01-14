@@ -57,7 +57,7 @@ nnoremap <C-f> :Rg
 nnoremap <Space>v :call sml#mode_on()<CR>
 
 " fugitive settings for Linux
-nnoremap <A-b> :Gblame <CR>
+nnoremap <A-b> :Git blame<CR>
 
 " fugitive settings for Mac
 nnoremap ∫ :Gblame <CR>
