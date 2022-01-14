@@ -11,6 +11,9 @@ alias pull='git pull origin (git rev-parse --abbrev-ref HEAD)'
 alias amend='git commit --amend'
 alias stash='git stash'
 
+# fish
+alias anyenv-rehash='source ~/.config/fish/anyenv-rc.sh'
+
 # haskell
 # alias ghci='stack exec ghci'
 
