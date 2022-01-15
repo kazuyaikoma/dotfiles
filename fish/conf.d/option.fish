@@ -101,6 +101,5 @@ alias android='android-studio'
 # MikanOS
 alias mikan-qemu='$HOME/osbook/devenv/run_qemu.sh'
 
-# SELF project
-alias api-in='docker exec -it self-api_app_1 sh'
-alias ml-in='docker exec -it self-ml_app_1 sh'
+# nand2tetris
+alias nand2tetris='bash $HOME/ghq/github.com/nixii/nand2tetris/tools/HardwareSimulator.sh'
