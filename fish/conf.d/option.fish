@@ -95,9 +95,6 @@ alias be='bundle exec'
 alias atc='atcoder-tools gen --workspace ($HOME/ghq/github.com/nixii/atcoder/AtCoder) $argv[1]'
 alias atest='g++ -std=gnu++17 -Wall -Wextra -O2 -DONLINE_JUDGE -I/opt/boost/gcc/include -L/opt/boost/gcc/lib -o a.out ./main.cpp; and atcoder-tools test'
 
-# android
-alias android='android-studio'
-
 # MikanOS
 alias mikan-qemu='$HOME/osbook/devenv/run_qemu.sh'
 
