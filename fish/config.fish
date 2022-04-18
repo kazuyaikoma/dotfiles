@@ -72,32 +72,8 @@ end
 starship init fish | source
 set -x STARSHIP_CONFIG ~/.starship/config.toml
 
-# anyenv
-fish_add_path $HOME/.anyenv/bin
-status --is-interactive; and source (anyenv init - --no-rehash| psub)
-
-# nodenv
-set -x NODENV_ROOT $HOME/.anyenv/envs/nodenv
-fish_add_path $HOME/.anyenv/envs/nodenv/bin
-fish_add_path $NODENV_ROOT/shims
-
-# node packages
-fish_add_path $HOME/.anyenv/envs/nodenv/versions/(nodenv versions --bare)/bin
-
-# pyenv
-set -x PYENV_ROOT "$HOME/.anyenv/envs/pyenv"
-fish_add_path $PYENV_ROOT/shims
-
-# rbenv
-set -x RBENV_ROOT "$HOME/.anyenv/envs/rbenv"
-fish_add_path $RBENV_ROOT/shims
-
-# goenv
-set -x GOENV_ROOT "$HOME/.anyenv/envs/goenv"
-fish_add_path "$GOENV_ROOT/bin"
-set -x GOROOT (goenv prefix)
-set -x GOPATH $HOME/go/(goenv versions --bare)
-fish_add_path $RBENV_ROOT/shims
+# asdf
+source /opt/homebrew/opt/asdf/asdf.fish
 
 # gh command setting
 eval (gh completion -s fish| source)
