@@ -46,7 +46,6 @@ alias goo='googler'
 alias fd='open (pwd)'
 alias c='clear'
 alias csv='vd'
-alias pbcopy='xsel --clipboard --input'
 alias restart='shutdown -r'
 alias tl='tldr'
 
