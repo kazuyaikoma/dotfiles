@@ -94,7 +94,7 @@ alias be='bundle exec'
 alias atc='atcoder-tools gen --lang go --workspace ($HOME/ghq/github.com/nixii/atcoder/AtCoder) $argv[1]'
 alias atest='go build -buildmode=exe -o ./a.out ./main.go; and atcoder-tools test'
 alias atest-cpp='g++ -std=gnu++17 -Wall -Wextra -O2 -DONLINE_JUDGE -I/opt/boost/gcc/include -L/opt/boost/gcc/lib -o a.out ./main.cpp; and atcoder-tools test'
-alias sub='atcoder-tools submit'
+alias sub='atcoder-tools submit; or atcoder-tools submit -u'
 
 # MikanOS
 alias mikan-qemu='$HOME/osbook/devenv/run_qemu.sh'
