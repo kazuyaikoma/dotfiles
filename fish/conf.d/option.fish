@@ -65,8 +65,9 @@ alias nv='vi (find ./* -type f | fzf)'
 alias vimreset='rm ~/.local/share/nvim/swap/*.swp'
 
 # weather
-alias tenki='curl wttr.in/Tokyo'
-alias kion='curl v2.wttr.in/Tokyo'
+alias tenki='curl wttr.in/Kanagawa'
+alias tokyo='curl v2.wttr.in/Tokyo'
+alias kanagawa='curl v2.wttr.in/Kanagawa'
 
 # C, C++ runner
 alias crun='gcc -o a.out $argv[1]; and ./a.out $argv[2..-1]'
