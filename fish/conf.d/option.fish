@@ -70,8 +70,8 @@ alias tokyo='curl v2.wttr.in/Tokyo'
 alias kanagawa='curl v2.wttr.in/Kanagawa'
 
 # C, C++ runner
-alias crun='gcc -o a.out $argv[1]; and ./a.out $argv[2..-1]'
-alias cpprun='g++ -o a.out $argv[1]; and ./a.out $argv[2..-1]'
+alias crun='gcc -o a.out $argv[1]; and ./a.out'
+alias cpprun='g++ -o a.out $argv[1]; and ./a.out'
 
 # poetry
 alias po='poetry'
