@@ -3,6 +3,7 @@
 # set -x PATH (stack path --local-bin) $PATH
 set -x PATH $HOME/.cargo/bin $PATH
 set -x PATH $HOME/.poetry/bin $PATH
+set -x PATH $HOME/.pub-cache/bin $PATH
 
 # 共用ライブラリ設定
 set -x LD_LIBRARY_PATH /usr/local/lib
@@ -73,7 +74,7 @@ starship init fish | source
 set -x STARSHIP_CONFIG ~/.starship/config.toml
 
 # asdf
-source /opt/homebrew/opt/asdf/asdf.fish
+source (brew --prefix asdf)/libexec/asdf.fish
 
 # gh command setting
 eval (gh completion -s fish| source)
