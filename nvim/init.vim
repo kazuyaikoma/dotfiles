@@ -29,7 +29,10 @@ if has('vim_starting') && dein#check_install()
 endif
 " dein.vim }}}
 
-" python linter
+" Rust autosave
+let g:rustfmt_autosave = 1
+
+" Python linter
 let g:syntastic_python_checkers = ["flake8"]
 
 function! s:source_rc(path, ...) abort

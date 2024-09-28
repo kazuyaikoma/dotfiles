@@ -206,7 +206,11 @@ function fisher --argument-names cmd --description "A plugin manager for Fish"
                     contains -- (string lower -- $plugin) (string lower -- $commit_plugins) || set --append commit_plugins $plugin
                 end
 
+<<<<<<< HEAD
                 string replace --regex -- $HOME \~ $commit_plugins >$fish_plugins
+=======
+                printf "%s\n" $commit_plugins >$fish_plugins
+>>>>>>> 0f39993cc5832947b5235d409d5dbadcc2af6f0f
             else
                 set --erase _fisher_plugins
                 command rm -f $fish_plugins
